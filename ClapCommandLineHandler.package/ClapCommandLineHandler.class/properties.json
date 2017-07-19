@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ClapCommandLineHandler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"session",
+		"stderr",
+		"stdout",
+		"commandLine"
+	],
+	"name" : "ClapCommandLineHandler",
+	"type" : "normal"
+}
