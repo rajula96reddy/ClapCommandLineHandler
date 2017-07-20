@@ -1,3 +1,4 @@
 combining
 command
-	^ SubclassResponsibility.
+
+^ SubclassResponsibility.
