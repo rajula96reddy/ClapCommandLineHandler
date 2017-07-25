@@ -4,12 +4,15 @@
 	"category" : "ClapCommandLineHandler",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"ActiveSubClassCollection"
+	],
 	"instvars" : [
 		"session",
 		"stderr",
 		"stdout",
-		"commandLine"
+		"commandLine",
+		"match"
 	],
 	"name" : "ClapCommandLineHandler",
 	"type" : "normal"

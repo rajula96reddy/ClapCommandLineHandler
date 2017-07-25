@@ -2,5 +2,5 @@ instance creation
 activateWith: aCommandLine 
 	
 	^ self new 
-		commandLine: (self prepareSubcommand: aCommandLine);
+		commandLine: (self activateWithName: aCommandLine);
 		activate

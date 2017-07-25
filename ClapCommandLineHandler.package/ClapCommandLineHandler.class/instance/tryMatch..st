@@ -1,7 +1,7 @@
 as yet unclassified
 tryMatch: aContext
-	| match |
-	match := self run: aContext.
-	match class == ClapCommandMatch 
-	ifTrue: [ ^true ].
+	| clapMatch |
+	clapMatch := self run: aContext.
+	clapMatch class == ClapCommandMatch 
+	ifTrue: [ match := clapMatch . ^true ].
 	^ false.
