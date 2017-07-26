@@ -1,4 +1,6 @@
 event handling
 activate: aMatch
 	"^ aMatch canonicalName."
-	self stderr nextPutAll: aMatch word asString ;lf.
+	"aMatch class = ClapCommandMatch"
+	"ifTrue: ["
+		self stderr nextPutAll: aMatch word asString ;lf.
