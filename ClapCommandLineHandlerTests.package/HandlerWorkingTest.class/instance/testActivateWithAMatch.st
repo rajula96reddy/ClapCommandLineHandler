@@ -1,5 +1,5 @@
 tests
 testActivateWithAMatch
-	| arguments |
-	arguments := #('Eval' 'test' '--list').
-	self assert: ((EvalClap new runHandler: arguments on: EvalClap ) match) class equals: ClapCommandMatch. 
+	| match |
+	match := EvalClap new run: (ClapContext on: #('Eval' 'test' '--list')).
+	self assert: ((EvalClap new activate: match) class )  equals: ClapCommandMatch. 
