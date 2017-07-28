@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ClapHandlerCollectorStrategy",
+	"category" : "ClapCommandLineHandler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ClapSubclassHandlerCollectorStrategy",
+	"type" : "normal"
+}

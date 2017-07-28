@@ -1,5 +1,5 @@
 tests
 testCommandNameMatch
 	| arguments |
-	arguments:= #('Eval').
-	self assert: (ClapCommandLineHandler new startHandler: arguments  onCollection: ClapCommandLineHandler getTestSubClassCollection) class equals: EvalClap	
+	arguments:= #('Eval' 'test').
+	self assert: ( (self classToTest) startHandler: arguments ) class equals: ClapCommandMatch 	

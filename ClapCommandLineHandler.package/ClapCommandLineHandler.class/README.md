@@ -1,0 +1,1 @@
+This is the base class for the ClapCommandLineHandler package. Any new handler to be created should be a subclass to this.This class has all the important methods for integrating Clap and the CommandLine. This class has few methods for echoing out on the command line.

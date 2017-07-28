@@ -2,4 +2,4 @@ tests
 testCommandNameError
 	| arguments |
 	arguments:= #('Evala').
-	self assert: (ClapCommandLineHandler new startHandler: arguments  onCollection: ClapCommandLineHandler getTestSubClassCollection) equals: Error
+	self assert: ((self classToTest ) startHandler: arguments) equals: Error

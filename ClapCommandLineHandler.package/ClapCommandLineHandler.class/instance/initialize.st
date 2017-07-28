@@ -5,4 +5,5 @@ initialize
 	self 
 		initializeStdout;
 		initializeStderr.
-	commandLine := CommandLineArguments new
+	commandLine := CommandLineArguments new.
+	handlerCollector := ClapSubclassHandlerCollectorStrategy new.

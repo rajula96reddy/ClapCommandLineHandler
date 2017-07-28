@@ -1,6 +1,6 @@
 activation
 activate
  'self sample'.
-	[self startHandler: (self arguments ) onCollection: (self collectSubclasses )]
+	[self startHandler: (self arguments)]
 		on: Exit 
 		do: [ :exit | ^ self handleExit: exit ]
