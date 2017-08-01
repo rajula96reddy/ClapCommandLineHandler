@@ -1,6 +1,6 @@
 tools registry
 register
 SessionManager default 
-	unregisterClassNamed:	BasicCommandLineHandler .
+	unregisterClassNamed:	#BasicCommandLineHandler .
 SessionManager default 
 		registerSystemClassNamed: self name
