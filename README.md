@@ -23,7 +23,7 @@ ClapCommandLineHandler is something like an handler (thing which handles) for th
     -   Or to just register ClapCommandLineHandler.
         - Do
         ```sh
-        ClapCommandLineHandler new registeerOnly
+        ClapCommandLineHandler new registerOnly
         ```
         Hopefully this method will be deprecated.
 # Using ClapCommandLineHandler
