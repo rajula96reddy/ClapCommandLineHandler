@@ -1,5 +1,6 @@
 as yet unclassified
 startHandler: arguments
+"This method activates the handler with given arguments and handles errors"
 	| matchedCollection |
 	arguments
 	ifNotEmpty: [ 

@@ -1,5 +1,6 @@
 as yet unclassified
 runHandler: arguments on: aHandler
+"This method converts the arguments into context and activates the sub class handler."
 	| context aHandlerInstance |
 	context := ClapContext on:arguments.
 	aHandlerInstance := aHandler new.
