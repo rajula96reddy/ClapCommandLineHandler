@@ -1,6 +1,6 @@
 tools registry
 register
-"This method unregisters the current BasicCommandLineHandler and registers ClapCommandLineHandler to sessionManager."
+"I will unregister the current BasicCommandLineHandler and register ClapCommandLineHandler to sessionManager."
 SessionManager default 
 	unregisterClassNamed:	#BasicCommandLineHandler .
 SessionManager default 

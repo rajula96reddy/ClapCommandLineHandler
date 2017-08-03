@@ -1,4 +1,4 @@
 accessing
 commandLine
-"Returns the instance variable commandLine"
+"This method returns the instance variable commandLine"
 	^ commandLine

@@ -1,6 +1,6 @@
 activation
 handleExit: exit for: aClapCommandLinehandler
-
+"This method handles the exit for the given handler"
 	Smalltalk isInteractive 
 		ifFalse: [ ^ exit pass ].
 		
