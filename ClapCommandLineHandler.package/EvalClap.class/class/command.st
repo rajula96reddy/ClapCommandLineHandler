@@ -1,8 +1,7 @@
 combining
 command
 "This method defines a clapCommand for the handler."
-	| flag subcommand command |
-	flag:= (ClapFlag withName: 'list') meaning: [ :value | value isMismatch not].
-	subcommand := (ClapCommand withName: 'test') addFlag: flag.
-	command := (ClapCommand withName: 'Eval') addSubcommand: subcommand .
+	| positional command |
+	positional := (ClapPositional withName: 'String').
+	command := (ClapCommand withName: 'Eval') addPositional: positional .
    ^ command.
