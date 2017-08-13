@@ -1,7 +1,7 @@
 printing
-handleOutput: aMatch
+handleOutput: aFlag 
 	"This method is used to handle the output with the match as input."
-	(aMatch atName: 'numeric' ) value
+	aFlag canonicalName = 'numeric'
 	ifTrue:[^ self printNumericVersion ].
-	(aMatch atName: 'release' ) value 
+	aFlag canonicalName = 'release' 
 	ifTrue:[^ self printRelease ].

@@ -6,5 +6,5 @@ activate: aMatch
 	flag_match := (self class command flags) detect: [ :a | (aMatch includesKey: (a canonicalName)) ] ifNone:[nil].
 	flag_match 
 	ifNil:[self printVersion]
-	ifNotNil: [ self handleOutput: aMatch].
+	ifNotNil: [ self handleOutput: flag_match ].
 	^ self exitSuccess.
