@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ClapCommandLineHandler",
+	"category" : "ClapCommandLineHandler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SaveClap",
+	"type" : "normal"
+}

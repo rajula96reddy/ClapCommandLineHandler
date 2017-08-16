@@ -1,3 +1,4 @@
 printing
 print: aString
-	self stdout nextPutAll: aString;lf.
+	self stdout
+		nextPutAll: aString;lf.
