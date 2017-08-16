@@ -1,5 +1,5 @@
 running
 classToTest
 	^ ClapCommandLineHandler new
-	 handlerCollectionStrategy: (ClapHandlerCollectionStrategy new withAll:{EvalClap. PrintClap }); 
+	 handlerCollectionStrategy: (ClapHandlerCollectionStrategy new withAll:{EvalClapHandler. PrintClapHandler }); 
 	yourself.

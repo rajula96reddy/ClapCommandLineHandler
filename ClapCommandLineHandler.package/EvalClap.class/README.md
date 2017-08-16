@@ -1,1 +1,0 @@
-I am a sample subclass handler for Eval ClapCommand.

@@ -1,5 +1,5 @@
 tests
 testMatchError
 	| match |
-	match := EvalClap new run: (ClapContext on:#('Eval' 'tes')).
-	self deny: ((EvalClap new activate: match) class = ClapCommandMatch). 
+	match := EvalClapHandler new run: (ClapContext on:#('Eval' 'tes')).
+	self deny: ((EvalClapHandler new activate: match) class = ClapCommandMatch). 
