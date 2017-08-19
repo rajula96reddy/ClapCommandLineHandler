@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "TestCase",
 	"category" : "ClapCommandLineHandlerTests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "EvalClapHandlerTest",
+	"name" : "SubCommandHandlersTest",
 	"type" : "normal"
 }

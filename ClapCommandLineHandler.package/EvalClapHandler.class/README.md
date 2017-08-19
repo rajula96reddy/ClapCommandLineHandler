@@ -1,6 +1,7 @@
-I am a sample subclass handler for Eval ClapCommand.
+Clap command line handler for dealing with evaluating expressions from the command line.
 
-Usage: eval [--help] [--save] [ --no-quit ] <smalltalk expression>
+Usage: eval [--help] [--save] [ --no-quit ] <smalltalk expression> or
+	    eval [-h] [-s] [-n] <smalltalk expression>
 	--help                   list this help message
 	--save                   save the image after evaluation of the expression
 	--no-quit                if specified, the image continues runing after

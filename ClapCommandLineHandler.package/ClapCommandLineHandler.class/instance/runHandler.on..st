@@ -6,7 +6,11 @@ runHandler: arguments on: aHandler
 	aHandlerInstance := aHandler new.
 	"arguments size = 1
 	ifFalse:["
-	aHandlerInstance tryMatch: context.
-	^ aHandlerInstance  activate: aHandlerInstance match"].
-	^ aHandlerInstance handleUsage."
+	[aHandlerInstance tryMatch: context.
+	aHandlerInstance  activate: aHandlerInstance match]
+	on: Exit
+	do: [ :exit | ^ self handleExit: exit ].
+"	^ aHandlerInstance match."
+	"].
+		^ aHandlerInstance handleUsage."
 	

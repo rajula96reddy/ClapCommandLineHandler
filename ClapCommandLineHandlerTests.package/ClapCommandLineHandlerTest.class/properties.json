@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "HandlerTest",
+	"name" : "ClapCommandLineHandlerTest",
 	"type" : "normal"
 }

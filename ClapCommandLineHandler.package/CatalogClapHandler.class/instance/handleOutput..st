@@ -1,5 +1,7 @@
 printing
 handleOutput: aMatch
+	" if help flag is send message handleUsage else send message to getProject:"
+
 	(aMatch includesKey: 'help') value
-	ifTrue:[^ self handleHelp].
-	^ self getProject: aMatch.
+		ifTrue: [ ^ self handleUsage ].
+	^ self getProject: aMatch
