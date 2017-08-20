@@ -30,12 +30,13 @@ ClapCommandLineHandler is something like an handler (thing which handles) for th
 Using ClapCommandLineHandler is simple. But to do this you should have the knowledge of clap-st. To breif about how to use this
 - First, create a subclass to the current ClapCommandLineHandler.
 - In the class side of your current class create a method named **command** and create an Clap command you need in this method and return the command created.
-- And on the instance side add an method called **activate: aMatch** which takes a match. You can put your own implementation here.
+- And on the instance side add an method called **handleActivate: aMatch** which takes a match. You can put your own implementation here.
 - To run the handler, from command line, 
 ```
 CommandName arg1 arg2
 ```
+- arg1 and arg2 can be either flags or positionals or subcommands or commands.
 - So to breif the working, whenever you give an input on the commandline, the inputs command name is first taken and searches for an existing command.If there is a match with the command name, the handler takes all the arguments and converts them into ClapContext and matches them with the matched clap command. Then the match returned will be sent to the activate method of the command, which will look into how to use the match.
-- Hence the implementation in the activate:aMatch should decide what to return for a succcssfull match or handle an error.
+- Hence the implementation in the handleActivate:aMatch should decide what to return for a succcssfull match or handle an error.
     
 Feel free to experiment this out and give your feedback.
